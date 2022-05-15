@@ -1,0 +1,155 @@
+/* 头部 */
+header{
+    height: 56px;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 16px;
+    padding-right: 16px;
+    line-height: 56px;
+}
+header>span{
+    margin-left: 10px;
+    font-size: 20px !important;
+}
+/* 红圆点 */
+.red_cir{
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+}
+/* 身体 */
+section{
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+section>.money{
+    /* height: 100px; */
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+section>.money>li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+}
+section>.money>li:nth-child(1){
+    border-right: 1px solid gainsboro;
+    font-size: 22px;
+    padding-right: 20px;
+    color: orange;
+}
+section>.money .p2{
+  margin-top: 14px;
+  font-size: 14px;
+  color: #515151;
+}
+section>.money>li .iconfont{
+    color: blue;
+    font-size: 32px;
+}
+section>.money>li .sp1{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* 话题大讨论 */
+/* 话题大讨论 */
+section>.topic{
+    height: 44px;
+    line-height: 44px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    color: #a0a0a0;
+    font-size: 20px;
+    border-top: 10px solid #e5e5e5;
+}
+section>.topic>p{
+    /* border-left: 5px solid blue; */
+    padding-left: 12px;
+    position: relative;
+    font-weight: bolder;
+    color: black;
+}
+section>.topic>p::before{
+    content: "";
+    width: 3px;
+    height: 20px;
+    background-color: blue;
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+section>.topic span{
+    display: block;
+     position: relative;
+}
+section>.topic .red_cir{
+    right: 16px;
+}
+/* 主要内容区域 */
+/* 主要内容区域 */
+section>main{
+    /* width: 750px;
+    height: 540px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+section>main>.iconfont{
+    width: 25%;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding-top: 20px;
+    /* border: 1px solid #e6e6e6; */
+}
+section>main p{
+    font-size: 20px;
+    margin-top: 5px;
+}
+section>main p{
+    color: black;
+}
+section>main #p_fisrt{
+    /* display: block; */
+    position: relative;
+}
+/* section>main>#p_first>.red_cir1{
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+} */
+
+/* 脚部 */
+footer>a:nth-child(5){
+    color: blue;
+}
+footer:a:nth-child(1){
+    color: #333333;
+}
+footer:a:nth-child(3){
+    color: #333333;
+}
+footer:a:nth-child(4){
+    color: #333333;
+}
+footer:a:nth-child(2){
+    color: #333333;
+}

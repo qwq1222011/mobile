@@ -1,0 +1,60 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+}
+input{
+    border: none;
+    outline: none;
+}
+/* 窗口的自适应 */
+html,body{
+    height: 100%;
+}
+/* 父元素触发弹性盒子 */
+body{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* 脚部 */
+footer{
+    height: 100px;
+    background-color: #fcfafd;
+    border-top: 1px solid gainsboro;
+    display: flex;
+    justify-content: space-around;
+}
+footer a{
+    text-decoration: none;
+    color: #333333;
+    /* line-height: 100px; */
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer>a span{
+    font-size: 20px;
+}
+footer>a .iconfont{
+    font-size: 35px !important;
+}
+footer>a>li:hover span{
+    color: blue;
+}

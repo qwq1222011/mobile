@@ -1,0 +1,281 @@
+/* 头部 */
+header{
+    height: 60px;
+    background-color: #fefefe;
+    position: relative;
+}
+header>ul{
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header>ul>li{
+     margin-left: 20px;
+     position: relative;
+}
+header>span{
+    font-size: 1rem;
+    position: absolute;
+    right: 3px;
+    top: 16px;
+}
+/* 鼠标划过时的动态效果 */
+header>ul>li:hover::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: blue;
+    position: absolute;
+    bottom:-5px;
+    left: 30%;
+    margin-left: -0.15rem;
+}
+header>ul>li:hover{
+    color: blue;
+}
+/* 导航栏 */
+nav{
+    /* margin-bottom: 20px; */
+    border-bottom: 1px solid gray;
+    margin-left: 16px;
+    margin-right: 16px;
+    color: gray;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+nav>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav>ul>li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+nav>ul>li>.iconfont{
+    font-size: 26px;
+}
+nav>ul>li .sp1{
+    margin-top: 5px;
+}
+/* 计数点 */
+nav>.number{
+    position: absolute; 
+     left: 40%;
+    bottom: 3px;
+}
+nav>.number>span{
+    display: block;
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    margin-left: 5px;
+}
+nav>ul>li:nth-child(1)>.iconfont{
+    color: blue;
+}
+nav>ul>li:nth-child(2)>.iconfont{
+    color: red;
+}
+nav>ul>li:nth-child(3)>.iconfont{
+    color: green;
+}
+nav>ul>li:nth-child(4)>.iconfont{
+    color: red;
+}
+nav>ul>li:nth-child(5)>.iconfont{
+    color: orange;
+}
+/* 身体 */
+section{
+    flex: 1;
+    overflow: auto;
+}
+/* 我的圈子 */
+section>.my_loop{
+    /* height: 80px; */
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+section>.my_loop div{
+    width: 50%;
+    /* height: 80px; */
+    color: #a0a0a0;
+    font-size: 20px;
+    display: flex;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+section>.my_loop .icon-26{
+    flex: 1;
+    color: blue;
+    padding-top: 30px;
+    font-size: 25px !important;
+}
+section>.my_loop .icon-eyeopen{
+    flex: 1;
+    font-size: 25px !important;
+    color: orange;
+    padding-top: 30px;
+}
+section>.my_loop .box{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+section>.my_loop .p1{
+    font-size: 20px;
+    padding-top: 16px;
+    color: black;
+    font-weight: bolder;
+}
+section>.my_loop .p2{
+    font-size: 14px;
+}
+section>.my_loop .icon-youjiantou-01{
+    font-size: 25px !important;
+    padding-top: 30px;
+}
+
+/* 话题大讨论 */
+section>.topic{
+    height: 44px;
+    line-height: 44px;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    color: #a0a0a0;
+    font-size: 20px;
+}
+section>.topic>p{
+    /* border-left: 5px solid blue; */
+    padding-left: 12px;
+    position: relative;
+}
+section>.topic>p::before{
+    content: "";
+    width: 3px;
+    height: 20px;
+    background-color: blue;
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+
+/* 照片 */
+section>.photo{
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    box-sizing: border-box;
+}
+section>.photo>li:nth-child(1)
+{
+    background: url(../image/01.jpg) no-repeat;
+    background-size: cover;
+}
+section>.photo>li:nth-child(2)
+{
+    background: url(../image/02.jpg) no-repeat;
+    background-size: cover;
+}
+section>.photo>li:nth-child(3)
+{
+    background: url(../image/03.jpg) no-repeat;
+    background-size: cover;
+}
+section>.photo>li{
+    width: 33.3%;
+    list-style: none;
+    margin-left: 5px;
+    position: relative;
+}
+section>.photo>li>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section>.photo>li .sp1{
+    color: white;
+    background-color: red;
+    padding: 3px;
+    border-radius: 3px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+section>.photo>li>.loop{
+    width: 30px;
+    height: 30px;
+    background-color: #ffe9ec;
+    border-radius: 50%;
+    opacity: 1;
+    position: absolute;
+    left: 40%;
+    top: 21%;
+}
+section>.photo>li i{
+    position: absolute;
+    top: 29%;
+    left: 21%;
+    color: red;
+}
+
+section>.photo>li p{
+    color: white;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    top: 40%;
+    left: 2%;
+}
+section>.photo>li .p2{
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    padding-left: 0px;
+    text-align: center;
+}
+section>.photo>li .info{
+    width: 90%;
+    background-color: #a0a0a0;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 5px;
+    left: 5%;
+    border-radius: 10px;
+    color: white;
+}
+
+
+/* 脚部 */
+footer>a:nth-child(2){
+    color: blue;
+}
+footer:a:nth-child(1){
+    color: #333333;
+}
+footer:a:nth-child(3){
+    color: #333333;
+}
+footer:a:nth-child(4){
+    color: #333333;
+}
+footer:a:nth-child(5){
+    color: #333333;
+}
+

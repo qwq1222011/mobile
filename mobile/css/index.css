@@ -1,0 +1,252 @@
+header{
+    /* height: 61px; */
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+header>span{
+    font-size: 38px !important;
+}
+header>div{
+    padding-top: 15px;
+    background-color: #f3f1f4;
+    border-radius: 10px;
+    padding-left: 18px;
+    width: 60%;
+}
+header>div>input{
+    color: #acacac;
+    font-weight: bolder;
+    background-color: #f3f1f4;
+   
+}
+header>img{
+    width: 36px;
+    height: 36px;
+}
+
+/* 导航栏 */
+nav{   
+    /* padding-left: 28px; */
+    width: 100%;
+    height: 52px;
+    margin-top: 20px;
+    position: relative;
+}
+nav>ul{
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    font-size: 25px;
+}
+nav>ul>li{
+    /* width: 13%;    */
+    flex-shrink: 0;
+    margin-left: 25px;
+    position: relative;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+nav>img{
+    position: absolute;
+    right: 0px;
+    top: -15px;
+}
+/* 鼠标划过，a变颜色 */
+nav>ul>li:hover::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: blue;
+    position: absolute;
+    bottom:-1px;
+    left: 30%;
+    margin-left: -0.15rem;
+}
+nav>ul>li:hover a{
+    color: blue;
+}
+
+/* 主体部分 */
+section{
+    flex: 1;
+    overflow: auto;
+}
+/* 轮播图 */
+section>.banner{
+    position: relative;
+    /* height: 3.75rem; */
+    overflow: hidden;
+}
+section>.banner>.photo{
+    width: 1000%;
+}
+section .photo>img{
+    width: 10%;
+    float: left;
+    margin-top: 10px;
+    animation: yidong 4s linear infinite alternate;
+}
+@keyframes yidong {
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(-100%);
+    }
+}
+/* 广告字样 */
+section>.banner .ad{
+    position: absolute; 
+    bottom: 0px;    
+    left: 5px;
+    background-color: #65544d;
+    height: 15px;
+}
+section>.banner span{
+    color: white;
+    font-size: 14px;
+}
+/* 计数器 */
+section>.banner .number{
+    position: absolute;
+    bottom: 5px;
+    left: 30%;
+}
+section>.banner li{
+    float: left;
+    margin-left: 8px;
+    width: 4px;
+    height: 4px;
+    background-color: #e3d6cd;
+}
+
+/* 广告 */
+section>.ad{
+    height: 70px;
+    border-bottom: 1px solid gray;
+    margin-left: 30px;
+    margin-right: 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+section>.ad .sp1{
+    position: absolute;
+    bottom: 1px;
+    left: 0px;
+    background-color: #666;
+    color: #b3b3b3;
+    font-size: 15px;
+    font-weight: bolder;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+section>.ad .iconfont{
+    font-size: 25px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+/* 导航栏 */
+section>nav{
+    border-bottom: 1px solid gray;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    padding-bottom: 20px;
+}
+section>nav>li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+section>nav>li>span{
+    font-size: 25px !important;    
+}
+section>nav>li>p{
+    font-size: 14px;
+    margin-top: 3px;
+    text-align: center;
+}
+section>nav>li:nth-child(1)>span
+{
+    color:blue;
+}
+section>nav>li:nth-child(2)>span
+{
+    color:red;
+}
+section>nav>li:nth-child(3)>span
+{
+    color:green;
+}
+section>nav>li:nth-child(4)>span
+{
+    color:red;
+}
+section>nav>li:nth-child(5)>span
+{
+    color:orange;
+}
+/* 计数点 */
+section>nav>ul{
+    position: absolute;
+    left: 40%;
+    bottom: 2px;
+
+}
+section>nav>ul>li{
+    float: left;
+    margin-left: 5px;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+}
+/* 新闻 */
+section>.news{
+    border-bottom: 1px solid gray;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+section>.news>p{
+    margin-top: 20px;
+    font-size: 17px;
+    color: #363636;
+}
+section>.news>.photo{
+    display: flex;
+    justify-content: space-around;
+}
+section>.news>.photo>img{
+    width: 33.3%;
+    margin-left: 5px;
+    animation: none;
+}
+section>.news>.infor{
+    margin-top: 8px;
+}
+section>.news .infor .sp1{
+    background-color: #eff3ff;
+    color: #66a2ff;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+section>.news .infor .sp2{
+    color: #9e9e9e;
+}
+
+/* 脚部： */
+footer>a:nth-child(1){
+    color: blue;
+}
